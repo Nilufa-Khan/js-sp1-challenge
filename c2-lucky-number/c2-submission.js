@@ -3,20 +3,15 @@ let n = 31052022;
 
 let sum = 0;
 let sum2 = 0;
-while(n!= 0){
+while(n != 0){
     
-    sum=sum + (n % 10);
-   
-        sum2 = sum2 + (sum % 10);
-        sum = sum / 10;
-    
-    n = n /10;
-  
-    
+        sum=(sum + (n % 10));
+        n = parseInt( n /10);
 }
-
-
-
-console.log(`Your Lucky Number is ${sum}`);
+console.log(`After extracting sum of numbers =  ${sum}`);
+while(sum != 0){
+        sum2 = (sum2 + (sum % 10));
+        sum = parseInt(sum / 10);
+}
 console.log(`Your Lucky Number is ${sum2}`);
     
